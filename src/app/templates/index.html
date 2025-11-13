@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+    <h1>Agent Directory</h1>
+    <div class="container webapp">
+        <!-- Show all AAS elements -->        
+        <div class="row">
+            <h4 class="container-title">
+                <!-- Show hierarchical Order-->
+                {% if model_type == 'AssetAdministrationShell'  %}
+                    <b><a class="container-title-link-active" href="{{ url_for('index') }}">Asset Administration Shell</a></b> - Submodels - Submodel Elements - Related Submodel Elements
+                {% elif model_type == 'Submodel' %}
+                    <a class="container-title-link-inactive" href="{{ url_for('index') }}">Asset Administration Shell</a> - <b><a class="container-title-link-active" href="#">Submodels</a></b> - Submodel Elements  - Related Submodel Elements
+                {% elif model_type == 'SubmodelElement' %}
+                    <a class="container-title-link-inactive" href="{{ url_for('index') }}">Asset Administration Shell</a> - Submodels - <b><a class="container-title-link-active" href="#">Submodel Elements</a></b>  - Related Submodel Elements
+                {% elif model_type == 'SubmodelElementRelationship' %}
+                    <a class="container-title-link-inactive" href="{{ url_for('index') }}">Asset Administration Shell</a> - Submodels - Submodel Elements - <b><a class="container-title-link-active" href="#">Related Submodel Elements</a></b>
+                {% else %}
+                    <!-- if not known show only model type-->
+                    {{ model_type }}
+                {% endif %}
+                <!-- Show Parent -->
+                <p></p>
+                <p class="app-text-type">{{model_title}}s of {{ parent }}</p>
+            </h4>
+            {% for agent in agents %}    
+                {% include '_aas_element.html' %}
+            {% endfor %}
+        </div>    
+
+
+    </div>
+
+{% endblock %}

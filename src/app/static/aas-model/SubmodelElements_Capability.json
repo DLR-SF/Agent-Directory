@@ -1,0 +1,161 @@
+[
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation",
+    "type": "I4SubmodelElementCapability",
+    "descriptions": {
+        "type": "Property",
+        "value": [
+        {
+            "language": "en",
+            "text": "Agent capability to control operation of a plant according to given target parameters"
+        }
+      ]
+    },  
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": "None"
+    },
+    "idShort": {
+      "type": "Property",
+      "value": "ControlOperation"
+    },  
+    "category": {
+      "type": "Property",
+      "value": "Category"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementCapability"
+    },
+    "semanticId": {
+      "type": "Property",
+      "value": {
+        "keys": []
+      }
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    },
+    "refI4SubmodelId": 
+    {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities"
+    },
+    "endpoint": {
+      "type": "Property",
+      "value": "localhost:3000"
+    },
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]  
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation",
+    "type": "I4SubmodelElementCapability",
+    "descriptions": {
+        "type": "Property",
+        "value": [
+        {
+            "language": "en",
+            "text": "Agent capability to start operation of a plant according to a given list of subsystems"
+        }
+      ]
+    },  
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": "None"
+    },
+    "idShort": {
+      "type": "Property",
+      "value": "StartOperation"
+    },  
+    "category": {
+      "type": "Property",
+      "value": "PARAMETER"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementCapability"
+    },
+    "semanticId": {
+      "type": "Property",
+      "value": {
+        "keys": []
+      }
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    },
+    "refI4SubmodelId": 
+    {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities"
+    },
+    "endpoint": {
+      "type": "Property",
+      "value": "localhost:3000"
+    },    
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]  
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation",
+    "type": "I4SubmodelElementCapability",
+    "descriptions": {
+        "type": "Property",
+        "value": [
+        {
+            "language": "en",
+            "text": "Agent capability to stop operation of a plant shutting down a given list of subsystems"
+        }
+      ]
+    },  
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": "None"
+    },
+    "idShort": {
+      "type": "Property",
+      "value": "StopOperation"
+    },  
+    "category": {
+      "type": "Property",
+      "value": "Capability"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementCapability"
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    },
+    "refI4SubmodelId": 
+    {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities"
+    },
+    "endpoint": {
+      "type": "Property",
+      "value": "localhost:3000"
+    },
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]  
+  }
+]

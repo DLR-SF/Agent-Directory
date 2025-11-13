@@ -1,0 +1,130 @@
+/**
+ * Custom CSS
+ */
+
+
+/* IDs */
+#capability_exec_alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    visibility: hidden;    
+}
+
+
+/* General Types */
+button {
+    padding: 10px 20px 10px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.picture {
+    padding: 5px 5px 5px 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h4 {
+    word-wrap: break-word; 
+    height: 50px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+}
+
+
+/* Classes */
+.popupDialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.skill_monitoring_table tr {
+    border: 1px solid black;
+}
+
+.first_column {
+    background-color: #3b5564;
+    color: white;
+}
+
+.tile-box {
+    margin: 5px 5px 5px 5px;
+    /* min-height: 211px; */
+    height: 370px;
+}
+
+.app-text {
+    padding: 10px 10px 10px 10px;
+    height: 100px;
+}
+
+.app-text-description {
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    height: 100px;
+    max-height: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    -moz-line-clamp: 5;
+    -moz-box-orient: vertical;    
+}
+
+.app-actions-details {
+    background-color: #3b5564;
+    border: none;
+    margin-top: 10px;
+}
+
+.container-title-link-active {
+    color: #3b5564;
+}
+
+.container-title-link-inactive {
+    color: black;
+}
+
+.container-title.b {
+    color: #3b5564;
+}
+
+.app-text-title {
+    color: #3b5564;
+
+}
+
+.app-text-type {
+    color: #696969;
+    font-size: small;
+}
+
+.text-input {
+    min-height: 200px;
+    min-width: 150px;
+    resize: both;
+}

@@ -1,0 +1,150 @@
+[
+    {
+    "id": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS",
+    "type": "I4AAS",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "administration": {
+      "type": "Property",
+      "value": {
+        "version": "1.0",
+        "revision": "1.0"
+      }
+    },
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Asset Administration Shell of the Dummy-Agent that manages submodels to describe the agent"
+        }
+      ]
+    },
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/tree/master/I4AAS"]
+    },  
+    "idShort": {
+      "type": "Property",
+      "value": "I4AAS:DummyAgent:AAS"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },  
+    "modelType": {
+      "type": "Property",
+      "value":"AssetAdministrationShell"
+    },      
+    "refI4AssetId": {
+      "type": "Property",
+      "value": "IndustrialPlant"
+    },
+    "submodels": {
+      "type": "Property",
+      "value": [
+      {
+        "keys": [
+          {
+              "type": "Submodel",
+              "local": false,
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities",
+              "index": 0,
+              "idType": "IRI"
+            },
+            {
+              "type": "Submodel",
+              "local": false,
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills",
+              "index": 0,
+              "idType": "IRI"
+            }          
+          ]
+        }
+      ]
+    },
+    "@context": [
+      "http://ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent2:AAS",
+    "type": "I4AAS",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "administration": {
+      "type": "Property",
+      "value": {
+        "version": "1.0",
+        "revision": "1.0"
+      }
+    },
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Asset Administration Shell of the Dummy-Agent that manages submodels to describe the agent"
+        }
+      ]
+    },
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/tree/master/I4AAS"]
+    },  
+    "idShort": {
+      "type": "Property",
+      "value": "I4AAS:DummyAgent2:AAS"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },  
+    "modelType": {
+      "type": "Property",
+      "value": "AssetAdministrationShell"
+    },      
+    "refI4AssetId": {
+      "type": "Property",
+      "value": "IndustrialPlant"
+    },
+    "submodels": {
+      "type": "Property",
+      "value": [
+      {
+        "keys": [
+          {
+              "type": "Submodel",
+              "local": false,
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent2:Capabilities",
+              "index": 0,
+              "idType": "IRI"
+            },
+            {
+              "type": "Submodel",
+              "local": false,
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent2:Skills",
+              "index": 0,
+              "idType": "IRI"
+            }          
+          ]
+        }
+      ]
+    },
+    "@context": [
+      "http://ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  }  
+]

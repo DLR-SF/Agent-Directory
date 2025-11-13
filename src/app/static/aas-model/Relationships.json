@@ -1,0 +1,314 @@
+[
+    {
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:ControlOperation01",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to control operation with the skill to receive live data"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:DummyAgent:ControlOperation01"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:ControlOperation02",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to control operation with the skill to receive live data"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:DummyAgent:ControlOperation02"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:ControlOperation03",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to control operation with the skill to receive live data"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:DummyAgent:ControlOperation03"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:StartOperation01",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to start subsystems"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:DummyAgent:StartOperation01"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystem"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:StartOperation02",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to start subsystems"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:DummyAgent:StartOperation02"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:StopOperation01",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to start subsystems"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:DummyAgent:StopOperation01"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]  
+}
+]
