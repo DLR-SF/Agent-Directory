@@ -1,4 +1,5 @@
 
+
 <!-- Tiles -->
 {% if agent.idShort.value %}
 <div class="panel panel-default col-xs-6 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center text-center tile-box">
@@ -15,7 +16,11 @@
             <h4 class="app-text-title"><p>{{ agent.idShort.value }}</p></h4>
         </a>
         {% if agent.descriptions and agent.descriptions.value and agent.descriptions.value|length > 0 %}
-            <span class="app-text-description">{{ agent.descriptions.value[0].text }}</span>
+            {% if agent.descriptions.value[0] %}
+                <span class="app-text-description">{{ agent.descriptions.value[0].text }}</span>
+            {% else %}
+                <span class="app-text-description">{{ agent.descriptions.value.text }}</span>
+            {% endif %}
         {% else %}
             <span class="app-text-description">No description available</span>
         {% endif %}
@@ -58,7 +63,7 @@
     <h4>{{ agent.idShort.value }} Actions</h4>
     <p class="app-text-type">Execute {{ agent.modelType.value }}:</p>
     Input Variables (if required):
-    <form action="#" onsubmit="execute_function(event, '{{agent.idShort.value}}')">
+    <form action="#" onsubmit="execute_function(event, '{{agent.idShort.value}}', '{{agent.endpoint.value}}')">
         <textarea id="input_vars" name="input_vars" rows="10" cols="30" class="text-input" placeholder="Enter input variables of capability in json format"></textarea><br><br>
         <input class="app-actions-details btn btn-primary" type="submit" value="Execute">
     </form>     

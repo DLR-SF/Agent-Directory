@@ -119,7 +119,7 @@ class platformHandler:
         # create platformQuery object as input parameter
         pq = platformQuery(self.broker_url, self.fiware_service, self.fiware_service_path, self.context)
         pq.options = options
-        pq.attributes = attrs
+        pq.query_parameters = attrs
 
         # get or re-use token
         token_result = self.handle_token()

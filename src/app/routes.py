@@ -29,6 +29,7 @@ def index():
     tile_nav = "Submodel"
     icon = "/static/images/aas-icon.png"
     parent = "Multi-Agent System"
+
     return render_template('index.html', agents=agent_aas, model_title=model_title, model_type=model_type, tile_nav=tile_nav, icon=icon, parent=parent, error=error)
 
 @app.route('/Submodel/<aas_id>')
@@ -95,6 +96,9 @@ def related_submodelelements(submodel_id, submodelelement_id):
 
         # get all related submodel elements
         related_elements = get_submodelelements_to_id_list(related_element_id)
+        if isinstance(related_elements, tuple):
+            # return error
+            return related_elements
 
     # render template
     model_title = "Submodel Element Relationship"
@@ -102,6 +106,7 @@ def related_submodelelements(submodel_id, submodelelement_id):
     tile_nav = "SubmodelElement"
     url = tile_nav + "/" + submodel_id
     icon = "/static/images/submodel-element-icon.png"
+
     return render_template('index.html', agents=related_elements, model_title=model_title, model_type=model_type, tile_nav=url, icon=icon, parent=submodelelement_id, error=error)
 
 
@@ -130,7 +135,12 @@ def proxy_agent_capability(idShort):
     if request.method == 'OPTIONS':
         return Response(status=200)
 
-    target = f'http://localhost:3000/agent-capabilities/{idShort}'
+    if request.headers.get("Endpoint"):
+        endpoint = request.headers.get("Endpoint")
+    else:
+        endpoint = "localhost:3000"
+
+    target = f'http://{endpoint}/agent-capabilities/{idShort}'
     try:
         resp = requests.post(target, json=request.get_json(), timeout=10)
     except requests.RequestException as e:
@@ -196,16 +206,26 @@ def get_aas_model_from_broker(model_type, parent_id):
         attrs = {"type":"I4AAS"}
     elif model_type == "Submodel":
         # all submodels of specific aas
-        attrs = {"type":"I4Submodel", "q": "refI4AASId=='{}'".format(parent_id)}
+        attrs = {"type":"I4Submodel", "q": "refI4AASId==\"{}\"".format(parent_id)}
     elif model_type == "SubmodelElement":
         # all submodel elements of specific submodel
-        attrs = {"type":"I4SubmodelElementCapability", "q": "refI4SubmodelId=='{}'".format(parent_id)}    
+        attrs = {"q": "refI4SubmodelId==\"{}\"".format(parent_id)}    
+    elif model_type == "SubmodelElementRelationship":
+        # all relationship elemeents
+        attrs = {"type":"I4SubmodelElementRelationship"}
     else:
         print("Not implemented")
         attrs = {"type":"None"}
 
     # read all entites
-    return ph.read_entities_by_type(options="keyValue",attrs=attrs)
+    result = ph.read_entities_by_type(options="normalized",attrs=attrs)
+    if isinstance(result, tuple) and result[1] == 200:
+        # return json if success
+        result_json = json.loads(result[0])
+        return result_json
+    else:
+        # otherwise return error tuple
+        return result
 
 
 def get_aas_model_data_by_parent_id(model_type, parent_id):
@@ -263,10 +283,15 @@ def get_submodelelements_to_id_list_broker(id_list):
     '''
     Get a list of entities by id from broker
     '''
-    ph = platformHandler
+    ph = platformHandler()
     subelements = []
     for id in id_list:
-        subelements.append(ph.read_entity(id, "keyValues", []))
+        result = ph.read_entity(id, "normalized", [])
+        if isinstance(result, tuple) and result[1] == 200:
+            subelements.append(json.loads(result[0]))
+        else:
+            # return error
+            return result
 
     # read all entites
     return subelements

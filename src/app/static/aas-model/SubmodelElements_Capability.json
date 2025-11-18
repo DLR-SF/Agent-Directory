@@ -48,10 +48,10 @@
     },
     "endpoint": {
       "type": "Property",
-      "value": "localhost:3000"
+      "value": "localhost:3002"
     },
     "@context": [
-      "https://smartdatamodels.org/context.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]  
   },
   {
@@ -103,10 +103,10 @@
     },
     "endpoint": {
       "type": "Property",
-      "value": "localhost:3000"
+      "value": "localhost:3002"
     },    
     "@context": [
-      "https://smartdatamodels.org/context.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]  
   },
   {
@@ -152,10 +152,10 @@
     },
     "endpoint": {
       "type": "Property",
-      "value": "localhost:3000"
+      "value": "localhost:3002"
     },
     "@context": [
-      "https://smartdatamodels.org/context.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]  
   }
 ]

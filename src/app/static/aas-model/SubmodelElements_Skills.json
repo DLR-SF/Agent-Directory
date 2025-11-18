@@ -111,7 +111,7 @@
       "value": 0
     },
     "@context": [
-      "http://ld-context/datamodels.context-ngsild.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
   },
   {
@@ -193,7 +193,7 @@
       "value": 0
     },
     "@context": [
-      "http://ld-context/datamodels.context-ngsild.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
   },
   {
@@ -275,7 +275,7 @@
       "value": 0
     },
     "@context": [
-      "http://ld-context/datamodels.context-ngsild.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
   },
   {
@@ -390,7 +390,7 @@
       "value": 0
     },
     "@context": [
-      "http://ld-context/datamodels.context-ngsild.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
   },
   {
@@ -505,7 +505,7 @@
       "value": 0
     },
     "@context": [
-      "http://ld-context/datamodels.context-ngsild.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
   },
   {
@@ -620,7 +620,7 @@
       "value": 0
     },
     "@context": [
-      "http://ld-context/datamodels.context-ngsild.jsonld"
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
   }
 ]

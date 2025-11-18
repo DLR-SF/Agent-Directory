@@ -43,7 +43,7 @@ function openPopAction(model_type, agent_id) {
 }
 
 // call agent capability
-function execute_function(event, idShort) {
+function execute_function(event, idShort, endpoint) {
     // Read raw input (assumes a form field named `input_vars` on the form that triggered this)
     let raw = event.target.input_vars.value;
 
@@ -62,7 +62,8 @@ function execute_function(event, idShort) {
         method: "POST",
         body: JSON.stringify(inputVarsObj),
         headers: {
-            'Content-Type': 'application/json; charset=UTF-8'
+            'Content-Type': 'application/json; charset=UTF-8',
+            'Endpoint': endpoint
         }
     })
     .then(async (response) => {

@@ -48,7 +48,7 @@
     "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData"
   },
   "@context": [
-    "https://smartdatamodels.org/context.jsonld"
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
@@ -100,7 +100,7 @@
     "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints"
   },
   "@context": [
-    "https://smartdatamodels.org/context.jsonld"
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
@@ -152,7 +152,7 @@
     "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints"
   },
   "@context": [
-    "https://smartdatamodels.org/context.jsonld"
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
@@ -204,7 +204,7 @@
     "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystem"
   },
   "@context": [
-    "https://smartdatamodels.org/context.jsonld"
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
@@ -256,7 +256,7 @@
     "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck"
   },
   "@context": [
-    "https://smartdatamodels.org/context.jsonld"
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
@@ -308,7 +308,7 @@
     "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems"
   },
   "@context": [
-    "https://smartdatamodels.org/context.jsonld"
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 }
 ]
