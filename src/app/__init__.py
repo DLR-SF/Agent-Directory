@@ -35,4 +35,4 @@ if not app.debug:
     app.logger.setLevel(logging.INFO)
     app.logger.info('agent-directory startup')
 
-from app import routes, models, errors
+from app import routes, models, errors, platformHandler, configurationHandler

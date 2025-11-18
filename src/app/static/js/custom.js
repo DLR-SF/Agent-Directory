@@ -76,14 +76,13 @@ function execute_function(event, idShort) {
             message = 'Capability successfully executed (' + response.status + '). Response: ' + text
             result = 'success'
         }
-        showAlert(message, result)
     })
     .catch((error) => {
         // request not send because of issue
         message = "Can't execute capability. Error: '" + error + "'"
         result = 'error'
-        showAlert(message, result)
     });
+    showAlert(message, result)
 }
 
 function showAlert(message, result) {

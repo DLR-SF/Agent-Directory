@@ -24,6 +24,10 @@
                 <p></p>
                 <p class="app-text-type">{{model_title}}s of {{ parent }}</p>
             </h4>
+            {% if error %}
+                {% include '_error.html' %}
+            {% endif %}
+
             {% for agent in agents %}    
                 {% include '_aas_element.html' %}
             {% endfor %}

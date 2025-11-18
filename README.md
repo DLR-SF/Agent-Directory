@@ -103,13 +103,13 @@ The app can be configured using a configuration file in [/src/app/config/](/src/
 
 ### 'app' Section
 First, you can configure the app to connect it to different backends:
-1) **Productive Usage:** In productive mode the app reads the agent models from a NGSI-LD Context Broker backend
-2) **Test Usage:** In test mode the app reads the agent models from a file-based backend in folder [/src/app/static/aas-model/](/src/app/static/aas-model/). Here the files [AAS.json](/src/app/static/aas-model/AAS.json), [Submodels.json](/src/app/static/aas-model/Submodels.json), [SubmodelElements_Capability.json](/src/app/static/aas-model/SubmodelElements_Capability.json), [SubmodelElements_Skills.json](/src/app/static/aas-model/SubmodelElements_Skills.json), [Relationships.json](/src/app/static/aas-model/Relationships.json) include the AAS models for agent representation.
+1) **Broker:** In broker mode the app reads the agent models from a NGSI-LD Context Broker backend
+2) **Files:** In file-based mode the app reads the agent models from a files in folder [/src/app/static/aas-model/](/src/app/static/aas-model/). Here the files [AAS.json](/src/app/static/aas-model/AAS.json), [Submodels.json](/src/app/static/aas-model/Submodels.json), [SubmodelElements_Capability.json](/src/app/static/aas-model/SubmodelElements_Capability.json), [SubmodelElements_Skills.json](/src/app/static/aas-model/SubmodelElements_Skills.json), [Relationships.json](/src/app/static/aas-model/Relationships.json) include the AAS models for agent representation.
 
 ```
 app:
-    # backend mode ('test': file-based, 'productive': broker)
-    backend_mode: "test"
+    # backend mode (file-based, broker)
+    backend_mode: "file-based"
     ...
 ``` 
 

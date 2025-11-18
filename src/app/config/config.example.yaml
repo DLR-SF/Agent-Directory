@@ -2,12 +2,12 @@
 # Configuration File  #
 #######################
 app:
-    # backend mode ('test': file-based, 'productive': broker)
-    backend_mode: "test"
+    # backend mode (file-based, broker)
+    backend_mode: "file-based"
 
 token:
     # enable token authentication
-    enable: true
+    enabled: false
 
     # url identity provider
     url: "http://digital-twin-infrastructure/identity-provider/protocol/openid-connect/token"
