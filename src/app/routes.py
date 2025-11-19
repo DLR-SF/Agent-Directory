@@ -146,6 +146,33 @@ def read_file_data(filename):
     # return data
     return data    
 
+def filter_by_parent_id(model, parent_id):
+    '''
+    filter model file by parent id
+    '''
+    # filtered model result
+    filtered_model = []
+
+    print(parent_id)
+
+    # loop through entities
+    for element in model:
+        # if there is a parent_id present (not in case of AAS)
+        if parent_id:
+            # filter by parent id
+            for key in parent_id:
+                # check if key field i of parent_id is included in model
+                if key in element: 
+                    # check if field parent_id value is the same than element value
+                    if element[key]["value"] == parent_id[key]:
+                        # include model
+                        filtered_model.append(element)
+        # do not filter by parent id and provide whole model file
+        else:
+            filtered_model.append(element)
+
+    return filtered_model
+
 def get_aas_model_file(model_type, parent_id):   
     '''
     Read model from json file
@@ -155,18 +182,25 @@ def get_aas_model_file(model_type, parent_id):
         filename = "AAS.json"
     elif model_type == "Submodel":
         filename = "Submodels.json" 
+        parent_id = {"refI4AASId": parent_id}
     elif model_type == "SubmodelElement":
+        parent_id = {"refI4SubmodelId": parent_id}
         if "Skills" in parent_id:
             filename = "SubmodelElements_Skills.json"
         else:
             filename = "SubmodelElements_Capability.json"
     elif model_type == "SubmodelElementRelationship":
         filename = "Relationships.json"
+        # collect all relationships -> they are filtered by relationship first / second by caller
+        parent_id = None
     else:
         print("Not supported File Type")
         return None
 
-    return read_file_data(filename)
+    model = read_file_data(filename)
+    filtered_model = filter_by_parent_id(model, parent_id)
+
+    return filtered_model
     
 
 def get_aas_model_from_broker(model_type, parent_id):

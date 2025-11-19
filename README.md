@@ -24,12 +24,12 @@ See how to deploy, use, and configure the app to use it in a custom MAS system e
 
 This app uses python and a set of libraries and has been tested with Python 3.10.4 on Windows 10 and Ubuntu 22.04.
 
-Moreover it can be deployed standalone or containerized (see section 'Run app'). There is no need for additional dependencies other than the deployment solution and the installation of listed python dependencies in this environment (see [requirements.txt](/src/requirements.txt)).
+Moreover it can be deployed standalone or containerized (see section [Run app](#run-app)). There is no need for additional dependencies other than the installation of listed python dependencies into a system or containerized system environment (see [requirements.txt](/src/requirements.txt)).
 
 ## Build app
 
 The app can be deployed in a container in case you don't want to deploy it standalone. Therefore you need to create an image using docker beforehand:
-1. open a cmd and change to src location of the project 
+1. open a cmd and change to src location of the project: [/src](/src/)
 2. to build an image execute: ```docker build . -t agent-directory:1.0```
    1. Remark: In newer releases it can also be ```docker buildx build . -t agent-directory:1.0```
 3. check newly created image: ```docker images```
@@ -51,9 +51,9 @@ First you have to create the virtual environment (only needed when you use deplo
 Afterwards you can run the app like that:
 1. Enter venv using ```.\venv\Scripts\activate```
 2. Go to src-directory: ```cd \src```
-3. Run flask app: ```python -m flask run``` or simply ```flask run```
+3. Run flask app: ```python -m flask run``` or simply ```flask run``` and optionally provide a port (eg. ```flask run -p 3001```)
 4. Afterwards the webserver should run and your should be able to access the webapp via browser (see [Test app](#test-app))
-5. Press Strg+C to stop the app
+5. Press Strg+C in the console to stop the app
 
 ### As a docker container
 
@@ -63,8 +63,8 @@ Afterwards you can run the app like that:
 4. If you want to stop the container run: ```docker stop <container-id>```
 
 ## Test app
-1. Open URL in browser http://<domain>:<port>, for example, 
-   1. Standalone: http://localhost:5000
+1. Open URL in browser http://\<domain\>:\<port\>, for example, 
+   1. Standalone: http://localhost:5000 (default if no port parameter is provided)
    2. Docker: http://localhost:8000 (if run with 8000:5000 port parameter)
 2. As a result you should be able to see all available agents and navigate through their asset administration shell (AAS) data representation to explore their data model and possibly invoke actions. 
 
@@ -76,7 +76,7 @@ Home (index):</br>
 ### Data Model
 As an example the app shows agents that are represented based on an asset administration shell (AAS) data model. Each agent is represented by an own AAS instance which is comprimised of an AAS Model, Submodels, Submodel Elements and Relationships. The Agent Directory web app allows to browser through the AAS representation hierarchically starting with AAS instances, their submodels, their submodel elements, and possibly relationships of the submodel elements.
 
-In productive usage the app should be conected with a NGSI-LD context server as discussed in [Configuration Section](#configure-app). For testing purposed the local model of a MAS comprimised out of two dummy agents can be used. Therefore, configure test mode and explore the AAS representation of the dummy agent. The agent is represented by an AAS instance (DummyAgent), which is related to a bunch of submodels (Capabilities and Skills), which are related to submodel elements (Capabilities and Skill elements). The submodel elements can again be related to each other by an explicit realized by relationship.
+In productive usage the app should be conected with a NGSI-LD context server as discussed in [Configuration Section](#configure-app). Alternatively a file-based backend can be used as a local model in [/src/app/static/aas-model/](/src/app/static/aas-model/). As a default the file-based backend is configured with a MAS comprimised out of two dummy agents. The dummy agents are represented by an AAS instance (DummyAgent and DummyAgent2), which are related to a bunch of submodels (Capabilities and Skills), which are related to submodel elements (Capabilities and Skill elements). The submodel elements can again be related to each other by an explicit realized by relationship as shown in the picture below.
 
 Data Model of the dummy agent:</br>
 ![Agent Directory Index Page](/src/app/static/images/Dummy-Agent-Data-Model.png)
@@ -94,6 +94,11 @@ Navigating to subelement the user can navigate through the AAS representation by
 While at AAS and submodel level are no context actions supported, the capabilities and skills submodel elements support context actions:
 1) **Capabilities:** Provide input variables and execute a capability
    ![Execute Capability Pop-Up](/src/app/static/images/execute_capability.png)
+   
+     * As a result you get a pop-up showing the success of the request:
+       ![Success Message](/src/app/static/images/Result_Capability_Alert_Box_Success.png)
+     * Or the failure: 
+       ![Failure Message](/src/app/static/images/Result_Capability_Alert_Box_Failure.png)
 2) **Skills:** Monitor current execution state of the skill which can be invoked by a capability
    ![Monitor Skill Pop-Up](/src/app/static/images/monitor_skill.png)
 

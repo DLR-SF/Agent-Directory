@@ -165,11 +165,14 @@
     "operationResult": {
       "type": "Property",
       "value":     {
-        "success": null,
-        "isException": null,
+        "success": true,
+        "isException": false,
         "entity": {},
         "entityType": "String",
-        "messages": []
+        "messages": [
+          { "text": "Operation 'ConfigureOperationPoints' of the Dummy-Agent started.", "code": 0, "messageType": "info"},
+          { "text": "Operation 'ConfigureOperationPoints' of the Dummy-Agent finished successfully.", "code": 0, "messageType": "info"}
+        ]
       }
     },
     "outputVariable": {

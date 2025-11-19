@@ -121,56 +121,56 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgentSTJ:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
     },
     "submodelElements": {
       "type": "Property",
       "value": [
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:StartSubsystems",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:StartSubsystems",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
             "modelType": {
               "name": "Operation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:SubsystemHealthCheck",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:SubsystemHealthCheck",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
             "modelType": {
               "name": "Operation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:StopSubsystems",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:StopSubsystems",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
             "modelType": {
               "name": "Operation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:ReceiveLiveData",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:ReceiveLiveData",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
             "modelType": {
               "name": "Operation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:CalculateOperationPoints",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:CalculateOperationPoints",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
             "modelType": {
               "name": "Operation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:ConfigureOperationPoints",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:ConfigureOperationPoints",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
             "modelType": {
               "name": "Operation"
             }
           },        
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgentSTJ:Skills:ModelPredictiveControl",
-            "idShort": "I4SubmodelElementOperation:DummyAgentSTJ:Skills:ModelPredictiveControl",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
             "modelType": {
               "name": "Operation"
             }

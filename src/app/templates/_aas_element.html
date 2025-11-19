@@ -103,7 +103,17 @@
                 </tr>
                 <tr>
                     <td>&nbsp;<i>Messages</i></td>
-                    <td>&nbsp;{{ agent.operationResult.value.messages }}&nbsp;&nbsp;</td>
+                    <td>
+                    {% if agent.operationResult.value.messages and agent.operationResult.value.messages|length == 0 %}
+                        &nbsp;{{ agent.operationResult.value.messages }}&nbsp;&nbsp;
+                    {% elif agent.operationResult.value.messages|length > 0 %}
+                    <ol>
+                        {% for message in agent.operationResult.value.messages %}    
+                            <li>{{ message.messageType }}: {{ message.text }}&nbsp;&nbsp;</li>
+                        {% endfor %}
+                    </ol>
+                    {% endif %}
+                    </td>
                 </tr>                
             </table>
         </td>
