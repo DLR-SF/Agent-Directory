@@ -1,6 +1,5 @@
 from flask import render_template, request, jsonify, Response
 from app import app
-import requests
 import json
 from app.platformHandler import platformHandler
 from dpam.model.platformQuery import platformQuery
@@ -125,30 +124,7 @@ def about():
     return render_template('about.html', title="About", text=about_text)
 
 
-@app.route('/proxy/agent-capabilities/<idShort>', methods=['POST', 'OPTIONS'])
-def proxy_agent_capability(idShort):
-    """
-    Proxy endpoint to forward capability calls to the backend service on localhost:3000.
-    This lets the browser call our Flask app (same-origin) and avoids CORS issues.
-    """
-    # Handle preflight quickly; Flask-CORS is configured globally but respond to OPTIONS anyway
-    if request.method == 'OPTIONS':
-        return Response(status=200)
 
-    if request.headers.get("Endpoint"):
-        endpoint = request.headers.get("Endpoint")
-    else:
-        endpoint = "localhost:3000"
-
-    target = f'http://{endpoint}/agent-capabilities/{idShort}'
-    try:
-        resp = requests.post(target, json=request.get_json(), timeout=10)
-    except requests.RequestException as e:
-        return jsonify({'error': str(e)}), 502
-
-    # Forward response content and status code; set content-type from target if present
-    content_type = resp.headers.get('Content-Type', 'application/json')
-    return Response(resp.content, status=resp.status_code, content_type=content_type)
 
 
 def read_file_data(filename):
