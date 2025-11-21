@@ -130,49 +130,49 @@
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           },
           {
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           },
           {
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           },
           {
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           },
           {
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           },
           {
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           },        
           {
             "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
             "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
             "modelType": {
-              "name": "Operation"
+              "name": "SubmodelElementOperation"
             }
           }
       ]

@@ -58,6 +58,7 @@ def submodelelements(submodel_id):
     '''
     # get all submodel element
     submodelelements = get_aas_model_data_by_parent_id("SubmodelElement", submodel_id)
+
     error = None
     if isinstance(submodelelements, tuple):
         # error during request to broker 
@@ -153,8 +154,6 @@ def filter_by_parent_id(model, parent_id):
     # filtered model result
     filtered_model = []
 
-    print(parent_id)
-
     # loop through entities
     for element in model:
         # if there is a parent_id present (not in case of AAS)
@@ -185,7 +184,7 @@ def get_aas_model_file(model_type, parent_id):
         parent_id = {"refI4AASId": parent_id}
     elif model_type == "SubmodelElement":
         parent_id = {"refI4SubmodelId": parent_id}
-        if "Skills" in parent_id:
+        if "Skills" in parent_id["refI4SubmodelId"]:
             filename = "SubmodelElements_Skills.json"
         else:
             filename = "SubmodelElements_Capability.json"
@@ -198,6 +197,7 @@ def get_aas_model_file(model_type, parent_id):
         return None
 
     model = read_file_data(filename)
+
     filtered_model = filter_by_parent_id(model, parent_id)
 
     return filtered_model
@@ -250,7 +250,8 @@ def get_aas_model_data_by_parent_id(model_type, parent_id):
     
     # file-based backend
     if backend_mode == "file-based":
-        return get_aas_model_file(model_type, parent_id)
+        result = get_aas_model_file(model_type, parent_id)
+        return result
     # broker-based backend
     elif backend_mode == "broker":
         return get_aas_model_from_broker(model_type, parent_id)
