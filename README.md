@@ -62,6 +62,9 @@ Afterwards you can run the app like that:
 3. Check if container is running: ```docker ps -a```
 4. If you want to stop the container run: ```docker stop <container-id>```
 
+*Remark: To serve the app correctly behind a proxy with a subpath which is automatically removed from your gateway, you can use the environment variable APP_SUBPATH, for example, APP_SUBPATH=agent-directory. If the variable is set it will be used to correctly serve static content such as js, images, ...*
+
+
 ## Test app
 1. Open URL in browser http://\<domain\>:\<port\>, for example, 
    1. Standalone: http://localhost:5000 (default if no port parameter is provided)

@@ -9,7 +9,16 @@ from flask_migrate import Migrate
 from config import Config
 from flask_bootstrap import Bootstrap
 
-app = Flask(__name__, static_url_path='/static')
+# get environment variable for subpath
+APP_SUBPATH = os.getenv("APP_SUBPATH", "")
+if APP_SUBPATH:
+    print(f"Using subpath: {APP_SUBPATH}")
+    static_path = f'/{APP_SUBPATH}/static'
+else:    
+    static_path = '/static'
+
+app = Flask(__name__, static_url_path=static_path)
+app.config["APP_SUBPATH"] = APP_SUBPATH
 CORS(app, origins="*")
 app.config.from_object(Config)
 db = SQLAlchemy(app)
