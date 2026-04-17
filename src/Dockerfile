@@ -4,15 +4,14 @@ RUN useradd agent-directory
 
 WORKDIR /home/agent-directory
 
+RUN apt-get update && apt-get install -y git
+
 COPY requirements.txt requirements.txt
-RUN python -m venv venv
-RUN venv/bin/pip install -r requirements.txt
-RUN venv/bin/pip install gunicorn
+RUN pip install -r requirements.txt
+RUN pip install gunicorn
 
 COPY app app
-COPY migrations migrations
 COPY agent-directory.py config.py boot.sh ./
-COPY conf conf
 RUN chmod +x boot.sh
 
 ENV FLASK_APP agent-directory.py
