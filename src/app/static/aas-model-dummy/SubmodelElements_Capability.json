@@ -1,13 +1,13 @@
 [
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:AdaptTargetParameters",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation",
     "type": "I4SubmodelElementCapability",
     "descriptions": {
         "type": "Property",
         "value": [
         {
             "language": "en",
-            "text": "Agent capability to adapt target temperature and massflow as parameters for plant operation"
+            "text": "Agent capability to control operation of a plant according to given target parameters"
         }
       ]
     },  
@@ -17,7 +17,7 @@
     },
     "idShort": {
       "type": "Property",
-      "value": "AdaptTargetParameters"
+      "value": "ControlOperation"
     },  
     "category": {
       "type": "Property",
@@ -39,12 +39,12 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
     },
     "refI4SubmodelId": 
     {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Capabilities"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities"
     },
     "endpoint": {
       "type": "Property",
@@ -55,14 +55,14 @@
     ]  
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation",
     "type": "I4SubmodelElementCapability",
     "descriptions": {
         "type": "Property",
         "value": [
         {
             "language": "en",
-            "text": "Agent capability to start operation of a plant based on a given list of subsystems and control operation of subsystems based on configured target parameters"
+            "text": "Agent capability to start operation of a plant according to a given list of subsystems"
         }
       ]
     },  
@@ -94,12 +94,12 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
     },
     "refI4SubmodelId": 
     {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Capabilities"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities"
     },
     "endpoint": {
       "type": "Property",
@@ -110,14 +110,14 @@
     ]  
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StopOperation",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation",
     "type": "I4SubmodelElementCapability",
     "descriptions": {
         "type": "Property",
         "value": [
         {
             "language": "en",
-            "text": "Agent capability to stop operation by cooling down the system and shutting down plant components based on a given list of subsystems"
+            "text": "Agent capability to stop operation of a plant shutting down a given list of subsystems"
         }
       ]
     },  
@@ -143,65 +143,16 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
     },
     "refI4SubmodelId": 
     {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Capabilities"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities"
     },
     "endpoint": {
       "type": "Property",
       "value": "localhost:3002"
-    },
-    "@context": [
-      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
-    ]  
-  },
-  {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation",
-    "type": "I4SubmodelElementCapability",
-    "descriptions": {
-        "type": "Property",
-        "value": [
-        {
-            "language": "en",
-            "text": "Agent capability to plan operation by calculating an optimized operation plan that provides an operation schedule, strategy and target parameters"
-        }
-      ]
-    },  
-    "hasDataSpecification": {
-      "type": "Property",
-      "value": "None"
-    },
-    "idShort": {
-      "type": "Property",
-      "value": "PlanOperation"
-    },  
-    "category": {
-      "type": "Property",
-      "value": "Capability"
-    },
-    "kind": {
-      "type": "Property",
-      "value": "Instance"
-    },
-    "modelType": {
-      "type": "Property",
-      "value": "SubmodelElementCapability"
-    },
-    "refI4AASId": {
-      "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent"
-    },
-    "refI4SubmodelId": 
-    {
-      "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Capabilities"
-    },
-    "endpoint": {
-      "type": "Property",
-      "value": "localhost:3003"
     },
     "@context": [
       "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"

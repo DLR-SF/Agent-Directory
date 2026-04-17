@@ -1,0 +1,629 @@
+[
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'CalculateOperationPoints' of Dummy-Agent to calcuate optimal operation points according to environmental conditions"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "CalculateOperationPoints"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "CalculateOperationPoints"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": [
+        {
+          "idShort": "CalculateOperationPoints:target_parameter1",
+          "value": 300,
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "Number"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Target parameter for plant operation, for example, a temperature threshold, desired speed or pressure"
+            }
+          ]
+        }, 
+        {
+          "idShort": "CalculateOperationPoints:target_parameter2",
+          "value": 1.5,
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "Number"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Target parameter for plant operation, for example, a temperature threshold, desired speed or pressure"
+            }
+          ]
+        }  
+      ]
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'ConfigureOperationPoints' of Dummy-Agent to configure subsystems according to optimized operation points"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "ConfigureOperationPoints"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "ConfigureOperationPoints"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": true,
+        "isException": false,
+        "entity": {},
+        "entityType": "String",
+        "messages": [
+          { "text": "Operation 'ConfigureOperationPoints' of the Dummy-Agent started.", "code": 0, "messageType": "info"},
+          { "text": "Operation 'ConfigureOperationPoints' of the Dummy-Agent finished successfully.", "code": 0, "messageType": "info"}
+        ]
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'ReceiveLiveData' of Dummy-Agent to receive live data from external sources"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "ReceiveLiveData"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "ReceiveLiveData"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystem",
+    "type": "I4SubmodelElementOperation",   
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    }, 
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Operation 'StartSubsystem' of the Dummy-Agent"
+        }
+      ]
+    },             
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "StartSubsystem"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "StartSubsystem"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": [
+        {
+          "idShort": "StartSubsystem:subsystem01",
+          "value": "StartSubsystem:subsystem01",
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "String"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Reference to plant subsystem that should be started for operation"
+            }
+          ]
+        }, 
+        {
+          "idShort": "StartSubsystem:subsystem02",
+          "value": "StartSubsystem:subsystem02",
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "String"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Reference to plant subsystem that should be started for operation"
+            }
+          ]
+        } 
+      ]
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+    },      
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },     
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Submodel operational capability 'StopSubsystems' of the Dummy-Agent"
+        }
+      ]
+    },          
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "idShort": {
+      "type": "Property",
+      "value": "StopSubsystems"
+    },
+    "name": {
+      "type": "Property",
+      "value": "StopSubsystems"
+    },      
+    "inputVariable": {
+      "type": "Property",
+      "value": [
+      {
+          "idShort": "StopSubsystem:subsystem01",
+          "value": "StopSubsystem:subsystem01",
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "String"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Reference to plant subsystem that should be started for operation"
+            }
+          ]
+        }, 
+        {
+          "idShort": "StopSubsystem:subsystem02",
+          "value": "StopSubsystem:subsystem02",
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "String"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Reference to plant subsystem that should be started for operation"
+            }
+          ]
+        }        
+      ]
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+    }, 
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
+    "type": "I4SubmodelElementOperation",   
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    }, 
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Submodel operational capability 'SubsystemHealthCheck' of the Dummy-Agent"
+        }
+      ]
+    },             
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "SubsystemHealthCheck"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "SubsystemHealthCheck"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": [
+        {
+          "idShort": "SubsystemHealthCheck:subsystem01",
+          "value": "SubsystemHealthCheck:subsystem01",
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "String"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Reference to plant subsystem that should be started for operation"
+            }
+          ]
+        }, 
+        {
+          "idShort": "SubsystemHealthCheck:subsystem02",
+          "value": "SubsystemHealthCheck:subsystem02",
+          "hasDataSpecification": [],
+          "valueType": {
+            "dataObjectType": {
+              "name": "String"
+            }
+          },
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Reference to plant subsystem that should be started for operation"
+            }
+          ]
+        }        
+      ]
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+    },      
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  }
+]

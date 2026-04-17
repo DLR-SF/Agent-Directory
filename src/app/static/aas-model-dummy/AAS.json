@@ -1,6 +1,6 @@
 [
     {
-    "id": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS",
+    "id": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS",
     "type": "I4AAS",
     "dateCreated": {
       "type": "Property",
@@ -22,7 +22,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Asset Administration Shell of the Operation Management Agent that manages submodels to describe the agent"
+          "text": "Asset Administration Shell of the Dummy-Agent that manages submodels to describe the agent"
         }
       ]
     },    
@@ -32,7 +32,7 @@
     },  
     "idShort": {
       "type": "Property",
-      "value": "I4AAS:OperationManagementAgent:AAS"
+      "value": "I4AAS:DummyAgent:AAS"
     },
     "kind": {
       "type": "Property",
@@ -54,14 +54,14 @@
           {
               "type": "Submodel",
               "local": false,
-              "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Capabilities",
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities",
               "index": 0,
               "idType": "IRI"
             },
             {
               "type": "Submodel",
               "local": false,
-              "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Skills",
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills",
               "index": 0,
               "idType": "IRI"
             }          
@@ -74,7 +74,7 @@
     ]
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS",
+    "id": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent2:AAS",
     "type": "I4AAS",
     "dateCreated": {
       "type": "Property",
@@ -96,7 +96,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Asset Administration Shell of the Operation Control Agent that manages submodels to describe the agent"
+          "text": "Asset Administration Shell of the Dummy-Agent that manages submodels to describe the agent"
         }
       ]
     },
@@ -106,7 +106,7 @@
     },  
     "idShort": {
       "type": "Property",
-      "value": "I4AAS:OperationControlAgent:AAS"
+      "value": "I4AAS:DummyAgent2:AAS"
     },
     "kind": {
       "type": "Property",
@@ -128,14 +128,14 @@
           {
               "type": "Submodel",
               "local": false,
-              "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Capabilities",
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent2:Capabilities",
               "index": 0,
               "idType": "IRI"
             },
             {
               "type": "Submodel",
               "local": false,
-              "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills",
+              "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent2:Skills",
               "index": 0,
               "idType": "IRI"
             }          

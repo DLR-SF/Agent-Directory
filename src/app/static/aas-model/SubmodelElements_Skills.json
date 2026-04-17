@@ -1,6 +1,6 @@
 [
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetTemperature",
     "type": "I4SubmodelElementOperation",
     "dateCreated": {
       "type": "Property",
@@ -15,7 +15,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Skill 'CalculateOperationPoints' of Dummy-Agent to calcuate optimal operation points according to environmental conditions"
+          "text": "Skill 'SetTargetTemperature' of Operation Control Agent to adapt the configuration values for the target temperature of the heat generation process"
         }
       ]
     },    
@@ -29,17 +29,17 @@
     },
     "name": {
       "type": "Property",
-      "value": "CalculateOperationPoints"
+      "value": "SetTargetTemperature"
     },        
     "idShort": {
       "type": "Property",
-      "value": "CalculateOperationPoints"
+      "value": "SetTargetTemperature"
     },
     "inputVariable": {
       "type": "Property",
       "value": [
         {
-          "idShort": "CalculateOperationPoints:target_parameter1",
+          "idShort": "SetTargetTemperature:SetTargetTemperature",
           "value": 300,
           "hasDataSpecification": [],
           "valueType": {
@@ -50,26 +50,10 @@
           "descriptions": [
             {
               "language": "en",
-              "text": "Target parameter for plant operation, for example, a temperature threshold, desired speed or pressure"
+              "text": "Target parameter for plant operation providing a temperature threshold for the heat generation process"
             }
           ]
-        }, 
-        {
-          "idShort": "CalculateOperationPoints:target_parameter2",
-          "value": 1.5,
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "Number"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Target parameter for plant operation, for example, a temperature threshold, desired speed or pressure"
-            }
-          ]
-        }  
+        }
       ]
     },
     "kind": {
@@ -96,11 +80,11 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "refI4SubmodelId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
     },        
     "requestId": {
       "type": "Property",
@@ -115,7 +99,7 @@
     ]
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetMassflow",
     "type": "I4SubmodelElementOperation",
     "dateCreated": {
       "type": "Property",
@@ -130,7 +114,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Skill 'ConfigureOperationPoints' of Dummy-Agent to configure subsystems according to optimized operation points"
+          "text": "Skill 'SetTargetMassflow' of Operation Control Agent to configure the desired massflow as target parameter for the heat generation process"
         }
       ]
     },    
@@ -144,11 +128,11 @@
     },
     "name": {
       "type": "Property",
-      "value": "ConfigureOperationPoints"
+      "value": "SetTargetMassflow"
     },        
     "idShort": {
       "type": "Property",
-      "value": "ConfigureOperationPoints"
+      "value": "SetTargetMassflow"
     },
     "inputVariable": {
       "type": "Property",
@@ -170,8 +154,8 @@
         "entity": {},
         "entityType": "String",
         "messages": [
-          { "text": "Operation 'ConfigureOperationPoints' of the Dummy-Agent started.", "code": 0, "messageType": "info"},
-          { "text": "Operation 'ConfigureOperationPoints' of the Dummy-Agent finished successfully.", "code": 0, "messageType": "info"}
+          { "text": "Operation 'SetTargetMassflow' of the Operation Control Agent started.", "code": 0, "messageType": "info"},
+          { "text": "Operation 'SetTargetMassflow' of the Operation Control Agent finished successfully.", "code": 0, "messageType": "info"}
         ]
       }
     },
@@ -181,11 +165,11 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "refI4SubmodelId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
     },        
     "requestId": {
       "type": "Property",
@@ -200,7 +184,7 @@
     ]
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StartPlant",
     "type": "I4SubmodelElementOperation",
     "dateCreated": {
       "type": "Property",
@@ -215,7 +199,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Skill 'ReceiveLiveData' of Dummy-Agent to receive live data from external sources"
+          "text": "Skill 'StartPlant' of Operation Control Agent to start the CST plant"
         }
       ]
     },    
@@ -229,11 +213,11 @@
     },
     "name": {
       "type": "Property",
-      "value": "ReceiveLiveData"
+      "value": "StartPlant"
     },        
     "idShort": {
       "type": "Property",
-      "value": "ReceiveLiveData"
+      "value": "StartPlant"
     },
     "inputVariable": {
       "type": "Property",
@@ -263,11 +247,11 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "refI4SubmodelId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
     },        
     "requestId": {
       "type": "Property",
@@ -282,7 +266,7 @@
     ]
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystem",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:HeatUp",
     "type": "I4SubmodelElementOperation",   
     "dateCreated": {
       "type": "Property",
@@ -297,7 +281,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Operation 'StartSubsystem' of the Dummy-Agent"
+          "text": "Operation 'HeatUp' of the Operation Control Agent to heat up the receiver to reach the configured target temperature"
         }
       ]
     },             
@@ -311,48 +295,15 @@
     },
     "name": {
       "type": "Property",
-      "value": "StartSubsystem"
+      "value": "HeatUp"
     },        
     "idShort": {
       "type": "Property",
-      "value": "StartSubsystem"
+      "value": "HeatUp"
     },
     "inputVariable": {
       "type": "Property",
-      "value": [
-        {
-          "idShort": "StartSubsystem:subsystem01",
-          "value": "StartSubsystem:subsystem01",
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "String"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Reference to plant subsystem that should be started for operation"
-            }
-          ]
-        }, 
-        {
-          "idShort": "StartSubsystem:subsystem02",
-          "value": "StartSubsystem:subsystem02",
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "String"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Reference to plant subsystem that should be started for operation"
-            }
-          ]
-        } 
-      ]
+      "value": []
     },
     "kind": {
       "type": "Property",
@@ -378,11 +329,11 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "refI4SubmodelId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
     },      
     "requestId": {
       "type": "Property",
@@ -397,7 +348,7 @@
     ]
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:OperatePlant",
     "type": "I4SubmodelElementOperation",
     "dateCreated": {
       "type": "Property",
@@ -412,7 +363,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Submodel operational capability 'StopSubsystems' of the Dummy-Agent"
+          "text": "Submodel operational capability 'OperatePlant' of the Operation Control Agent to operation CST plant according to configured target parameters"
         }
       ]
     },          
@@ -426,48 +377,15 @@
     },
     "idShort": {
       "type": "Property",
-      "value": "StopSubsystems"
+      "value": "OperatePlant"
     },
     "name": {
       "type": "Property",
-      "value": "StopSubsystems"
+      "value": "OperatePlant"
     },      
     "inputVariable": {
       "type": "Property",
-      "value": [
-      {
-          "idShort": "StopSubsystem:subsystem01",
-          "value": "StopSubsystem:subsystem01",
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "String"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Reference to plant subsystem that should be started for operation"
-            }
-          ]
-        }, 
-        {
-          "idShort": "StopSubsystem:subsystem02",
-          "value": "StopSubsystem:subsystem02",
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "String"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Reference to plant subsystem that should be started for operation"
-            }
-          ]
-        }        
-      ]
+      "value": []
     },
     "kind": {
       "type": "Property",
@@ -493,11 +411,11 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "refI4SubmodelId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
     }, 
     "requestId": {
       "type": "Property",
@@ -512,7 +430,7 @@
     ]
   },
   {
-    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StabilizeTemperature",
     "type": "I4SubmodelElementOperation",   
     "dateCreated": {
       "type": "Property",
@@ -527,7 +445,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Submodel operational capability 'SubsystemHealthCheck' of the Dummy-Agent"
+          "text": "Submodel operational capability 'StabilizeTemperature' of the Operation Control Agent to control heliostat field and plant components for a stable temperature at the receiver despite changing environmental conditions"
         }
       ]
     },             
@@ -541,48 +459,15 @@
     },
     "name": {
       "type": "Property",
-      "value": "SubsystemHealthCheck"
+      "value": "StabilizeTemperature"
     },        
     "idShort": {
       "type": "Property",
-      "value": "SubsystemHealthCheck"
+      "value": "StabilizeTemperature"
     },
     "inputVariable": {
       "type": "Property",
-      "value": [
-        {
-          "idShort": "SubsystemHealthCheck:subsystem01",
-          "value": "SubsystemHealthCheck:subsystem01",
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "String"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Reference to plant subsystem that should be started for operation"
-            }
-          ]
-        }, 
-        {
-          "idShort": "SubsystemHealthCheck:subsystem02",
-          "value": "SubsystemHealthCheck:subsystem02",
-          "hasDataSpecification": [],
-          "valueType": {
-            "dataObjectType": {
-              "name": "String"
-            }
-          },
-          "descriptions": [
-            {
-              "language": "en",
-              "text": "Reference to plant subsystem that should be started for operation"
-            }
-          ]
-        }        
-      ]
+      "value": []
     },
     "kind": {
       "type": "Property",
@@ -608,11 +493,11 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "refI4SubmodelId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills"
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
     },      
     "requestId": {
       "type": "Property",
@@ -625,5 +510,497 @@
     "@context": [
       "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
     ]
-  }
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StopPlant",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'StopPlant' of Operation Control Agent to stop the CST plant"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "StopPlant"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "StopPlant"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:CoolDown",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'CoolDown' of Operation Control Agent to cool down the CST plant receiver"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "CoolDown"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "CoolDown"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationSchedule",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'PlanOperationSchedule' of Operation Management Agent calculate optimized start and stop times for operation"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "PlanOperationSchedule"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "PlanOperationSchedule"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationStrategy",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'PlanOperationStrategy' of Operation Management Agent determine when the plant should generate electricity or load the heat storage to optimize production costs"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "PlanOperationStrategy"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "PlanOperationStrategy"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:DetermineTargetParameter",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'DetermineTargetParameter' of Operation Management Agent to calculate optimized operation points for target temperature and massflow according to environmental conditions"
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "DetermineTargetParameter"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "DetermineTargetParameter"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+  {
+    "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:CreateOperationPlan",
+    "type": "I4SubmodelElementOperation",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Skill 'CreateOperationPlan' of Operation Management Agent to persist the optimize operation plan at the digital twin infrastructure."
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/blob/master/I4SubmodelElementOperation"]
+    },
+    "executionState": {
+      "type": "Property",
+      "value": "initialized"
+    },
+    "name": {
+      "type": "Property",
+      "value": "CreateOperationPlan"
+    },        
+    "idShort": {
+      "type": "Property",
+      "value": "CreateOperationPlan"
+    },
+    "inputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "SubmodelElementOperation"
+    },
+    "operationResult": {
+      "type": "Property",
+      "value":     {
+        "success": null,
+        "isException": null,
+        "entity": {},
+        "entityType": "String",
+        "messages": []
+      }
+    },
+    "outputVariable": {
+      "type": "Property",
+      "value": []
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS"
+    },
+    "refI4SubmodelId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Skills"
+    },        
+    "requestId": {
+      "type": "Property",
+      "value": "review"
+    },
+    "timeout": {
+      "type": "Property",
+      "value": 0
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  }  
 ]

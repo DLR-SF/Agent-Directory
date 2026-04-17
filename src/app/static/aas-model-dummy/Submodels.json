@@ -1,0 +1,184 @@
+[
+{
+    "id": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities",
+    "type": "I4Submodel",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },  
+    "administration": {
+      "type": "Property",
+      "value": {
+        "version": "1.0",
+        "revision": "1.0"
+      }
+    },
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Submodel to represent the Capabilities of the Dummy-Agent that can be invoked to accomplish MAS-level objectives, such as production scheduling, task coordination, or quality control. "
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/tree/master/I4Submodel"]
+    },
+    "idShort": {
+      "type": "Property",
+      "value": "I4Submodel:DummyAgent:Capabilities"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "Submodel"
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "submodelElements": {
+      "type": "Property",
+      "value": [
+        {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartPlant",
+            "idShort": "I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation",
+            "modelType": {
+              "name": "Property"
+            }
+        },
+        {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation",
+            "idShort": "I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation",
+            "modelType": {
+              "name": "Property"
+            }
+        },
+        {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation",
+            "idShort": "I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation",
+            "modelType": {
+              "name": "Property"
+            }
+        }        
+      ]
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+{
+    "id": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills",
+    "type": "I4Submodel",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "administration": {
+      "type": "Property",
+      "value": {
+        "version": "1.0",
+        "revision": "1.0"
+      }
+    },
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Submodel to represent the Skills of the Dummy-Agent that can are used to execute an agent capability, such as receive live data, calculate operation point, or configure operation point. "
+        }
+      ]
+    },
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/tree/master/I4Submodel"]
+    },    
+    "idShort": {
+      "type": "Property",
+      "value": "I4Submodel:DummyAgent:Skills"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "Submodel"
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+    },
+    "submodelElements": {
+      "type": "Property",
+      "value": [
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },        
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
+            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          }
+      ]
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  }  
+]

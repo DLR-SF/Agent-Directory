@@ -1,13 +1,13 @@
 [
     {
-  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:ControlOperation01",
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:AdaptTargetParameters01",
   "type": "I4SubmodelElementRelationship",
   "descriptions": {
       "type": "Property",
       "value": [
        {
           "language": "en",
-          "text": "Relationship elements that interconnect the capabilitiy to control operation with the skill to receive live data"
+          "text": "Relationship elements that interconnect the capabilitiy to adapt target parameters with the skill to set target temperature"
        }
     ]
   },  
@@ -17,7 +17,7 @@
   },
   "idShort": {
     "type": "Property",
-    "value": "I4SubmodelElementRelationship:DummyAgent:ControlOperation01"
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:AdaptTargetParameters01"
   },  
   "category": {
     "type": "Property",
@@ -35,31 +35,31 @@
   },
   "refI4AASId": {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
   },
   "first": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:AdaptTargetParameters"
   },
   "second": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetTemperature"
   },
   "@context": [
     "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
-  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:ControlOperation02",
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:AdaptTargetParameters02",
   "type": "I4SubmodelElementRelationship",
   "descriptions": {
       "type": "Property",
       "value": [
        {
           "language": "en",
-          "text": "Relationship elements that interconnect the capabilitiy to control operation with the skill to receive live data"
+          "text": "Relationship elements that interconnect the capabilitiy to adapt target parameters with the skill to set target massflow"
        }
     ]
   },  
@@ -69,7 +69,7 @@
   },
   "idShort": {
     "type": "Property",
-    "value": "I4SubmodelElementRelationship:DummyAgent:ControlOperation02"
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:AdaptTargetParameters02"
   },  
   "category": {
     "type": "Property",
@@ -87,31 +87,31 @@
   },
   "refI4AASId": {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
   },
   "first": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:AdaptTargetParameters"
   },
   "second": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetMassflow"
   },
   "@context": [
     "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
-  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:ControlOperation03",
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:StartOperation01",
   "type": "I4SubmodelElementRelationship",
   "descriptions": {
       "type": "Property",
       "value": [
        {
           "language": "en",
-          "text": "Relationship elements that interconnect the capabilitiy to control operation with the skill to receive live data"
+          "text": "Relationship elements that interconnect the capabilitiy to start and control operation with the skill to start the plant"
        }
     ]
   },  
@@ -121,7 +121,7 @@
   },
   "idShort": {
     "type": "Property",
-    "value": "I4SubmodelElementRelationship:DummyAgent:ControlOperation03"
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:StartOperation01"
   },  
   "category": {
     "type": "Property",
@@ -139,31 +139,31 @@
   },
   "refI4AASId": {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
   },
   "first": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation"
   },
   "second": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StartPlant"
   },
   "@context": [
     "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
-  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:StartOperation01",
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:StartOperation02",
   "type": "I4SubmodelElementRelationship",
   "descriptions": {
       "type": "Property",
       "value": [
        {
           "language": "en",
-          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to start subsystems"
+          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to heat up the receiver"
        }
     ]
   },  
@@ -173,7 +173,7 @@
   },
   "idShort": {
     "type": "Property",
-    "value": "I4SubmodelElementRelationship:DummyAgent:StartOperation01"
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:StartOperation02"
   },  
   "category": {
     "type": "Property",
@@ -191,31 +191,31 @@
   },
   "refI4AASId": {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
   },
   "first": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation"
   },
   "second": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystem"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:HeatUp"
   },
   "@context": [
     "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
-  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:StartOperation02",
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:StartOperation03",
   "type": "I4SubmodelElementRelationship",
   "descriptions": {
       "type": "Property",
       "value": [
        {
           "language": "en",
-          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to start subsystems"
+          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to operate the plant at constant environmental conditions"
        }
     ]
   },  
@@ -225,7 +225,7 @@
   },
   "idShort": {
     "type": "Property",
-    "value": "I4SubmodelElementRelationship:DummyAgent:StartOperation02"
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:StartOperation03"
   },  
   "category": {
     "type": "Property",
@@ -243,31 +243,31 @@
   },
   "refI4AASId": {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
   },
   "first": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation"
   },
   "second": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:OperatePlant"
   },
   "@context": [
     "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
   ]  
 },
 {
-  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:DummyAgent:StopOperation01",
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:StartOperation04",
   "type": "I4SubmodelElementRelationship",
   "descriptions": {
       "type": "Property",
       "value": [
        {
           "language": "en",
-          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to start subsystems"
+          "text": "Relationship elements that interconnect the capabilitiy to start operation with the skill to stabilize temerature"
        }
     ]
   },  
@@ -277,7 +277,7 @@
   },
   "idShort": {
     "type": "Property",
-    "value": "I4SubmodelElementRelationship:DummyAgent:StopOperation01"
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:StartOperation04"
   },  
   "category": {
     "type": "Property",
@@ -295,17 +295,329 @@
   },
   "refI4AASId": {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent"
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
   },
   "first": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation"
   },
   "second": 
   {
     "type": "Property",
-    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems"
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StabilizeTemperature"
+  },
+  "@context": [
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:StopOperation01",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to stop operation with the skill to stop the plant"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:StopOperation01"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StopOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StopPlant"
+  },
+  "@context": [
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationControlAgent:StopOperation02",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to stop operation with the skill to cool down the CST plant receiver"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:OperationControlAgent:StopOperation02"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StopOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:CoolDown"
+  },
+  "@context": [
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation01",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to plan operation with the skill to plan an operation schedule for plant operation"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation01"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationSchedule"
+  },
+  "@context": [
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation02",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to plan operation with the skill to plan an operation strategy for plant operation"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation02"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationStrategy"
+  },
+  "@context": [
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation03",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to plan operation with the skill to determine target parameters for plant operation"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation03"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:DetermineTargetParameter"
+  },
+  "@context": [
+    "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+  ]  
+},
+{
+  "id": "urn:ngsi-ld:RAMI40:I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation04",
+  "type": "I4SubmodelElementRelationship",
+  "descriptions": {
+      "type": "Property",
+      "value": [
+       {
+          "language": "en",
+          "text": "Relationship elements that interconnect the capabilitiy to plan operation with the skill to create the optimized operation plan at the digital twin infrastructure"
+       }
+    ]
+  },  
+  "hasDataSpecification": {
+    "type": "Property",
+    "value": "None"
+  },
+  "idShort": {
+    "type": "Property",
+    "value": "I4SubmodelElementRelationship:OperationManagementAgent:PlanOperation04"
+  },  
+  "category": {
+    "type": "Property",
+    "value": "Relationship"
+  },
+  "kind": {
+    "type": "Property",
+    "value": "Instance"
+  },
+  "modelType": {
+    "type": "Property",
+    "value": {
+      "name": "SubmodelElementRelationship"
+    }
+  },
+  "refI4AASId": {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent"
+  },
+  "first": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation"
+  },
+  "second": 
+  {
+    "type": "Property",
+    "value": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:CreateOperationPlan"
   },
   "@context": [
     "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"

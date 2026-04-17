@@ -1,6 +1,6 @@
 [
 {
-    "id": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Capabilities",
+    "id": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Capabilities",
     "type": "I4Submodel",
     "dateCreated": {
       "type": "Property",
@@ -22,7 +22,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Submodel to represent the Capabilities of the Dummy-Agent that can be invoked to accomplish MAS-level objectives, such as production scheduling, task coordination, or quality control. "
+          "text": "Submodel to represent the Capabilities of the Operation Control Agent that can be invoked to accomplish MAS-level objectives, such as configuring operational target parameters or starting and stopping plant operation. "
         }
       ]
     },    
@@ -32,7 +32,7 @@
     },
     "idShort": {
       "type": "Property",
-      "value": "I4Submodel:DummyAgent:Capabilities"
+      "value": "I4Submodel:OperationControlAgent:Capabilities"
     },
     "kind": {
       "type": "Property",
@@ -44,28 +44,28 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "submodelElements": {
       "type": "Property",
       "value": [
         {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StartPlant",
-            "idShort": "I4SubmodelElementCapability:DummyAgent:Capabilities:StartOperation",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:AdaptTargetParameters",
+            "idShort": "I4SubmodelElementCapability:OperationControlAgent:Capabilities:AdaptTargetParameters",
             "modelType": {
               "name": "Property"
             }
         },
         {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation",
-            "idShort": "I4SubmodelElementCapability:DummyAgent:Capabilities:StopOperation",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation",
+            "idShort": "I4SubmodelElementCapability:OperationControlAgent:Capabilities:StartOperation",
             "modelType": {
               "name": "Property"
             }
         },
         {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation",
-            "idShort": "I4SubmodelElementCapability:DummyAgent:Capabilities:ControlOperation",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationControlAgent:Capabilities:StopOperation",
+            "idShort": "I4SubmodelElementCapability:OperationControlAgent:Capabilities:StopOperation",
             "modelType": {
               "name": "Property"
             }
@@ -77,7 +77,7 @@
     ]
   },
 {
-    "id": "urn:ngsi-ld:RAMI40:I4Submodel:DummyAgent:Skills",
+    "id": "urn:ngsi-ld:RAMI40:I4Submodel:OperationControlAgent:Skills",
     "type": "I4Submodel",
     "dateCreated": {
       "type": "Property",
@@ -99,7 +99,7 @@
       "value": [
         {
           "language": "en",
-          "text": "Submodel to represent the Skills of the Dummy-Agent that can are used to execute an agent capability, such as receive live data, calculate operation point, or configure operation point. "
+          "text": "Submodel to represent the Skills of the Operation Control Agent that can are used to execute an agent capability, for example, to configure target and temperature massflow point or heat up the operation process."
         }
       ]
     },
@@ -109,7 +109,7 @@
     },    
     "idShort": {
       "type": "Property",
-      "value": "I4Submodel:DummyAgent:Skills"
+      "value": "I4Submodel:OperationControlAgent:Skills"
     },
     "kind": {
       "type": "Property",
@@ -121,56 +121,209 @@
     },
     "refI4AASId": {
       "type": "Property",
-      "value": "urn:ngsi-ld:RAMI40:I4AAS:DummyAgent:AAS"
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationControlAgent:AAS"
     },
     "submodelElements": {
       "type": "Property",
       "value": [
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StartSubsystems",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetTemperature",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetTemperature",
             "modelType": {
               "name": "SubmodelElementOperation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:SubsystemHealthCheck",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetMassflow",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:SetTargetMassflow",
             "modelType": {
               "name": "SubmodelElementOperation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:StopSubsystems",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StartPlant",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:StartPlant",
             "modelType": {
               "name": "SubmodelElementOperation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ReceiveLiveData",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:HeatUp",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:HeatUp",
             "modelType": {
               "name": "SubmodelElementOperation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:CalculateOperationPoints",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:OperatePlant",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:OperatePlant",
             "modelType": {
               "name": "SubmodelElementOperation"
             }
           },
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ConfigureOperationPoints",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StabilizeTemperature",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:StabilizeTemperature",
             "modelType": {
               "name": "SubmodelElementOperation"
             }
           },        
           {
-            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
-            "idShort": "I4SubmodelElementOperation:DummyAgent:Skills:ModelPredictiveControl",
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:CoolDown",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:CoolDown",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },        
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationControlAgent:Skills:StopPlant",
+            "idShort": "I4SubmodelElementOperation:OperationControlAgent:Skills:StopPlant",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          }
+      ]
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },{
+    "id": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Capabilities",
+    "type": "I4Submodel",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },  
+    "administration": {
+      "type": "Property",
+      "value": {
+        "version": "1.0",
+        "revision": "1.0"
+      }
+    },
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Submodel to represent the Capabilities of the Operation Management Agent that can be invoked to accomplish MAS-level objectives, such as planning an optimized parameters or schedules for plant operation."
+        }
+      ]
+    },    
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/tree/master/I4Submodel"]
+    },
+    "idShort": {
+      "type": "Property",
+      "value": "I4Submodel:OperationManagementAgent:Capabilities"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "Submodel"
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS"
+    },
+    "submodelElements": {
+      "type": "Property",
+      "value": [
+        {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation",
+            "idShort": "I4SubmodelElementCapability:OperationManagementAgent:Capabilities:PlanOperation",
+            "modelType": {
+              "name": "Property"
+            }
+        }  
+      ]
+    },
+    "@context": [
+      "http://ld-context/ld-context/datamodels.context-ngsild.jsonld"
+    ]
+  },
+{
+    "id": "urn:ngsi-ld:RAMI40:I4Submodel:OperationManagementAgent:Skills",
+    "type": "I4Submodel",
+    "dateCreated": {
+      "type": "Property",
+      "value": ""
+    },
+    "dateModified": {
+      "type": "Property",
+      "value": ""
+    },    
+    "administration": {
+      "type": "Property",
+      "value": {
+        "version": "1.0",
+        "revision": "1.0"
+      }
+    },
+    "descriptions": {
+      "type": "Property",
+      "value": [
+        {
+          "language": "en",
+          "text": "Submodel to represent the Skills of the Operation Management Agent that can are used to execute an agent capability, for example, to determine target parameters or plan an operation strategy."
+        }
+      ]
+    },
+    "hasDataSpecification": {
+      "type": "Property",
+      "value": ["https://github.com/smart-data-models/dataModel.AAS/tree/master/I4Submodel"]
+    },    
+    "idShort": {
+      "type": "Property",
+      "value": "I4Submodel:OperationManagementAgent:Skills"
+    },
+    "kind": {
+      "type": "Property",
+      "value": "Instance"
+    },
+    "modelType": {
+      "type": "Property",
+      "value": "Submodel"
+    },
+    "refI4AASId": {
+      "type": "Property",
+      "value": "urn:ngsi-ld:RAMI40:I4AAS:OperationManagementAgent:AAS"
+    },
+    "submodelElements": {
+      "type": "Property",
+      "value": [
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationSchedule",
+            "idShort": "I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationSchedule",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationStrategy",
+            "idShort": "I4SubmodelElementOperation:OperationManagementAgent:Skills:PlanOperationStrategy",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:DetermineTargetParameters",
+            "idShort": "I4SubmodelElementOperation:OperationManagementAgent:Skills:DetermineTargetParameters",
+            "modelType": {
+              "name": "SubmodelElementOperation"
+            }
+          },
+          {
+            "refI4SubmodelElement": "urn:ngsi-ld:RAMI40:I4SubmodelElementOperation:OperationManagementAgent:Skills:CreateOperationPlan",
+            "idShort": "I4SubmodelElementOperation:OperationManagementAgent:Skills:CreateOperationPlan",
             "modelType": {
               "name": "SubmodelElementOperation"
             }

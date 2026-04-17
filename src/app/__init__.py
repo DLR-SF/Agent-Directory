@@ -12,9 +12,10 @@ from flask_bootstrap import Bootstrap
 # get environment variable for subpath
 APP_SUBPATH = os.getenv("APP_SUBPATH", "")
 if APP_SUBPATH:
-    print(f"Using subpath: {APP_SUBPATH}")
+    print(f"Starting app with subpath: {APP_SUBPATH}")
     static_path = f'/{APP_SUBPATH}/static'
 else:    
+    print("Starting app without subpath, using root path")
     static_path = '/static'
 
 app = Flask(__name__, static_url_path=static_path)
