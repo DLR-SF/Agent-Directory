@@ -26,7 +26,7 @@ def index():
     model_title = "Asset Administration Shell"
     model_type = "AssetAdministrationShell"
     tile_nav = "Submodel"
-    icon = url_for('static', filename='images/aas-icon.png')
+    icon = url_for('static', filename='images/aas-icon.webp')
     parent = "Multi-Agent System"
 
     return render_template('index.html', agents=agent_aas, model_title=model_title, model_type=model_type, tile_nav=tile_nav, icon=icon, parent=parent, error=error)
@@ -47,7 +47,7 @@ def submodels(aas_id):
     # render template
     model = "Submodel"
     tile_nav = "SubmodelElement"
-    icon = url_for('static', filename='images/submodel-icon.png')
+    icon = url_for('static', filename='images/submodel-icon.webp')
     return render_template('index.html', agents=submodels, model_title=model, model_type=model, tile_nav=tile_nav, icon=icon, parent=aas_id, error=error)
 
 
@@ -69,7 +69,7 @@ def submodelelements(submodel_id):
     model_title = "Submodel Element"
     model_type = "SubmodelElement"
     tile_nav = "SubmodelElement"
-    icon = url_for('static', filename='images/submodel-element-icon.png')
+    icon = url_for('static', filename='images/submodel-element-icon.webp')
         
     return render_template('index.html', agents=submodelelements, model_title=model_title, model_type=model_type, tile_nav=tile_nav, icon=icon, parent=submodel_id, error=error)
 
@@ -105,7 +105,7 @@ def related_submodelelements(submodel_id, submodelelement_id):
     model_type = "SubmodelElementRelationship"
     tile_nav = "SubmodelElement"
     url = tile_nav + "/" + submodel_id
-    icon = url_for('static', filename='images/submodel-element-icon.png')
+    icon = url_for('static', filename='images/submodel-element-icon.webp')
 
     return render_template('index.html', agents=related_elements, model_title=model_title, model_type=model_type, tile_nav=url, icon=icon, parent=submodelelement_id, error=error)
 
