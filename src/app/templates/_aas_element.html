@@ -19,9 +19,19 @@
     <div class="app-text">
         <!-- Textual Description-->
         <p class="app-text-type">{{ agent.modelType.value }}</p>
-        <a href="/{{ tile_nav }}/{{ agent.idShort.value }}" target="_self">
-            <h4 class="app-text-title"><p>{{ agent.idShort.value }}</p></h4>
-        </a>
+        {% if tile_nav == 'Submodel' %}
+            <a href="{{ url_for('submodels', aas_id=agent.idShort.value) }}" target="_self">
+                <h4 class="app-text-title"><p>{{ agent.idShort.value }}</p></h4>
+            </a>
+        {% elif tile_nav == 'SubmodelElement' %}
+            <a href="{{ url_for('submodelelements', submodel_id=agent.idShort.value) }}" target="_self">
+                <h4 class="app-text-title"><p>{{ agent.idShort.value }}</p></h4>
+            </a>
+        {% else %}
+            <a href="{{ url_for('index') }}" target="_self">
+                <h4 class="app-text-title"><p>{{ agent.idShort.value }}</p></h4>
+            </a>
+        {% endif %}
         {% if agent.descriptions and agent.descriptions.value and agent.descriptions.value|length > 0 %}
             {% if agent.descriptions.value[0] %}
                 <span class="app-text-description">{{ agent.descriptions.value[0].text }}</span>
@@ -37,14 +47,14 @@
         <button class="app-actions-details btn btn-primary" title="Details" onclick="openPop('{{ agent.id }}')">&#x1F50D;</button>
         <!-- 2) Navigate to Subelements -->
         {% if model_type == 'SubmodelElement' %}
-            <!-- Show Relationships of selected element (append element id) -->
-            <button class="app-actions-details btn btn-primary" title="Relationships" onclick="location.href='{{ request.path }}/{{ agent.id }}'">&#10149;</button>
+            <!-- Show Relationships of selected element (navigate to submodel element page) -->
+            <button class="app-actions-details btn btn-primary" title="Relationships" onclick="location.href='{{ url_for('submodelelements', submodel_id=agent.id) }}'">&#10149;</button>
         {% elif model_type == 'SubmodelElementRelationship' %}
             <!-- Again show Relationships of selected element (new element with first element only) -->
-            <button class="app-actions-details btn btn-primary" title="Relationships" onclick="location.href='/{{ tile_nav }}/{{ agent.id }}'">&#10149;</button>
+            <button class="app-actions-details btn btn-primary" title="Relationships" onclick="location.href='{{ url_for('submodelelements', submodel_id=agent.id) }}'">&#10149;</button>
         {% else %}
             <!-- Show Subelements -->
-            <button class="app-actions-details btn btn-primary" title="Subelements" onclick="location.href='/{{ tile_nav }}/{{ agent.id }}'">&#10149;</button>
+            <button class="app-actions-details btn btn-primary" title="Subelements" onclick="location.href='{{ url_for('submodelelements', submodel_id=agent.id) }}'">&#10149;</button>
         {% endif %}
         <!-- 3) Additional Actions -->
          <button class="app-actions-details btn btn-primary" title="Actions" onclick="openPopAction('{{ agent.modelType.value }}', '{{ agent.id }}')" >&#10032;</button>

@@ -1,4 +1,4 @@
-from flask import render_template, request, jsonify, Response
+from flask import render_template, request, jsonify, Response, url_for
 from app import app
 import json
 from app.platformHandler import platformHandler
@@ -26,8 +26,7 @@ def index():
     model_title = "Asset Administration Shell"
     model_type = "AssetAdministrationShell"
     tile_nav = "Submodel"
-    subpath = app.config.get("APP_SUBPATH", "")
-    icon = "/static/images/aas-icon.png" if subpath == "" else f'/{subpath}/static/images/aas-icon.png'
+    icon = url_for('static', filename='images/aas-icon.png')
     parent = "Multi-Agent System"
 
     return render_template('index.html', agents=agent_aas, model_title=model_title, model_type=model_type, tile_nav=tile_nav, icon=icon, parent=parent, error=error)
@@ -48,8 +47,7 @@ def submodels(aas_id):
     # render template
     model = "Submodel"
     tile_nav = "SubmodelElement"
-    subpath = app.config.get("APP_SUBPATH", "")
-    icon = "/static/images/submodel-icon.png" if subpath == "" else f'/{subpath}/static/images/submodel-icon.png'
+    icon = url_for('static', filename='images/submodel-icon.png')
     return render_template('index.html', agents=submodels, model_title=model, model_type=model, tile_nav=tile_nav, icon=icon, parent=aas_id, error=error)
 
 
@@ -71,8 +69,7 @@ def submodelelements(submodel_id):
     model_title = "Submodel Element"
     model_type = "SubmodelElement"
     tile_nav = "SubmodelElement"
-    subpath = app.config.get("APP_SUBPATH", "")
-    icon = "/static/images/submodel-element-icon.png" if subpath == "" else f'/{subpath}/static/images/submodel-element-icon.png'
+    icon = url_for('static', filename='images/submodel-element-icon.png')
         
     return render_template('index.html', agents=submodelelements, model_title=model_title, model_type=model_type, tile_nav=tile_nav, icon=icon, parent=submodel_id, error=error)
 
@@ -108,8 +105,7 @@ def related_submodelelements(submodel_id, submodelelement_id):
     model_type = "SubmodelElementRelationship"
     tile_nav = "SubmodelElement"
     url = tile_nav + "/" + submodel_id
-    subpath = app.config.get("APP_SUBPATH", "")
-    icon = "/static/images/submodel-element-icon.png" if subpath == "" else f'/{subpath}/static/images/submodel-element-icon.png'
+    icon = url_for('static', filename='images/submodel-element-icon.png')
 
     return render_template('index.html', agents=related_elements, model_title=model_title, model_type=model_type, tile_nav=url, icon=icon, parent=submodelelement_id, error=error)
 
